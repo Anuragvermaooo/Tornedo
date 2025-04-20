@@ -1,0 +1,426 @@
+
+  /* * Copyright © 2025 Anurag Verma
+  * 
+  * This code is a part of the Tornedo Project developed by Anurag Verma.
+  * All rights reserved.
+  * 
+  * Unauthorized copying, distribution, modification, or use of this code
+  * in whole or in part, is strictly prohibited without prior written permission
+  * from the author (Anurag Verma).
+  * 
+  * Tornedo is a privacy-focused project dedicated to developing secure, AI-driven,
+  * and high-performance technologies.
+  *
+  * For collaboration or licensing, contact: anuragverma8303425@gmail.com
+  *+91 8303425374 */
+ 
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000000; /* start ultra dark */
+    color: #fff;
+    transition: background 1.5s ease; /* smooth transition */
+   
+}
+body.loaded {
+    background: #222121; /* light dark after load */
+}
+
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000; /* ya koi bhi dark background */
+    padding: 5px 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 217, 255, 0.635); /* optional neon shadow */
+    /* box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);  */
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+/* Video Section */
+.video-section video {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    display: block;
+    object-fit: cover;
+    margin-top: 100px;
+  }  
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1b1b1b;
+    /* background: #151515; */
+    box-shadow: 0 0 10px rgb(0, 255, 255);
+    
+} 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 255, 255);
+    
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+/* Hero Section */
+
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(145deg, #a9a6a6, #4e4c4c);
+    
+    animation: fadeIn 2s ease;
+}
+.hero h1 {
+    font-size: 48px;
+    color: #0ff;
+}
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+
+
+.btn {
+    padding: 10px 20px;
+    background: #0ff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #00cccc;
+   
+}
+.projects {
+    padding: 5px 20px;
+    background: linear-gradient(145deg, #a9a6a6, #4e4c4c);
+    /* background: #675f5f; */
+}
+.projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0ff;
+}
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.project-card {
+    /* background: linear-gradient(145deg, #868181, #726c6c); */
+    background: #cdc8c8;
+    /* background: transparent; */
+    padding: 20px;
+    border-radius: 30px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.649);
+    transition: transform 0.3s ease;
+
+  /* extra part */
+  display: block;
+    text-decoration: none;
+    color: #000;
+    /* color: inherit; */
+    /* background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    cursor: pointer;
+
+
+}
+.project-card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 25px rgba(76, 0, 255, 0.4);
+}
+
+
+.project-card h3,
+.project-card p {
+    pointer-events: none; /* So inner text doesn't block the click */
+}
+
+
+
+
+h3 {
+    width: 50ch;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 7s steps(40) infinite alternate-reverse;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0ch;
+    }
+  }
+
+  
+  
+ 
+  
+  
+
+
+
+
+
+
+
+
+/* about us */
+
+ /* haver abour as */
+ .about {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.6;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+    font-family: 'Segoe UI', sans-serif;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.4), 0 0 60px rgba(255, 0, 0, 0.2);
+    background: linear-gradient(145deg, #2e003e, #000000);
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ff00ff;
+}
+
+.about p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.about a {
+    color: #ff00ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.about a:hover {
+    color: #ff4444;
+    text-decoration: underline;
+}
+
+
+
+
+/* contact */
+
+.contact {
+    padding: 60px 20px;
+    background: #424141;
+    text-align: center;
+}
+.contact h2 {
+    color: #0ff;
+}
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form input, form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #1e1e1e;
+    color: #ffffff;
+}
+form button {
+    padding: 10px;
+    background: #0ff;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+form button:hover {
+    background: #00cccc;
+}
+
+ /* footer  */
+
+ .footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo h2 {
+    font-size: 28px;
+    color: #0ff;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer-contact a {
+    color: #0ff;
+    text-decoration: none;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    font-size: 22px;
+    color: #0ff;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-copy p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+
+
+
+
+/* Chatbot Container */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  /* Chatbot Icon */
+  .chatbot-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .chatbot-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Chatbot Window */
+  .chatbot-window {
+    display: none;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Chatbot Header */
+  .chatbot-header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+  }
+  
+  /* Chatbot Body */
+  .chatbot-body {
+    padding: 10px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+  
+  /* Chatbot Input */
+  #chatbotInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+  }
+  
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

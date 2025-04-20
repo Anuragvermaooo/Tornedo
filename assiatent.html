@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Tornedo Asssinstent </title>
+  <!-- webpage ka logo -->
+  <link rel="icon" type="image/x-icon" href="circular_logo.png">
+
+  <style>
+    /*
+    * Copyright © 2025 Anurag Verma
+    * 
+    * This code is a part of the Tornedo Project developed by Anurag Verma.
+    * All rights reserved.
+    * 
+    * Unauthorized copying, distribution, modification, or use of this code
+    * in whole or in part, is strictly prohibited without prior written permission
+    * from the author (Anurag Verma).
+    * 
+    * Tornedo is a privacy-focused project dedicated to developing secure, AI-driven,
+    * and high-performance technologies.
+    *
+    * For collaboration or licensing, contact: anuragverma8303425@gmail.com
+    *+91 8303425374
+    */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #1f1f1f, #232323);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #00f0ff;
+      letter-spacing: 1px;
+    }
+
+    header a {
+      background: #00f0ff;
+      color: black;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: #00d0d0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0, 255, 255, 0.1); /* Added shadow effect */
+      transition: 0.3s;
+      cursor: pointer;
+      opacity: 0.95;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 255, 255, 0.3); /* Enhanced shadow on hover */
+    }
+
+    .card-title {
+      font-size: 22px;
+      color: #00f0ff;
+      margin-bottom: 10px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .coming-soon {
+      font-size: 14px;
+      color: #ff5050;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🤖  Ai Assistent</h1>
+    <a href="index.html">Back to Home</a>
+  </header>
+
+  <!-- Top Description Section -->
+  <div style="background: linear-gradient(135deg, #0f0f0f, #1a1a1a); padding: 40px 20px; text-align: center; border-bottom: 1px solid #222;">
+    <h2 style="color: #00f0ff; font-size: 28px; margin-bottom: 10px;">🎙️ Tornedo Ai Assinstent </h2>
+    <p style="color: #c0c0c0; font-size: 16px; max-width: 800px; margin: auto;">
+      On this page, you'll find all <span style="color: #ffae00;">the GUI-based projects</span> I've created. <span style="color: #00ffd5;">Each tool</span>, or project is presented as a <span style="color: #ff4e50;">unique card</span>, which you can explore and use by <span style="color: #92fe9d;">scrolling down.</span>
+    </p>
+  </div>
+
+  <!-- Project Card Section -->
+  <div class="container">
+    <div class="card" style="background: linear-gradient(135deg, #00c9ff, #92fe9d);">
+      <div class="card-title">Tornedo AI Assistant <span class="coming-soon">(Coming Soon)</span></div>
+      <div class="card-desc">
+        Voice-based AI to control your device — apps, settings, browser & more. 
+        Fast, private & fully offline.
+      </div>
+      <p style="color: #0008ff; font-size: 13px; margin-top: 10px;">
+        🔒 Private | 🎙️ Voice Control | ⚡ Fast
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
